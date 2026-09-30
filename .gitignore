@@ -1,0 +1,24 @@
+# Local environment secrets
+.env
+*.env
+infrastructure/.env
+
+# Build outputs & CDK generated files
+target/
+**/target/
+cdk.out/
+**/cdk.out/
+
+# IDE configurations
+.idea/
+*.iml
+**/*.iml
+
+# Ignore application.properties across all microservices
+**/src/main/resources/application.properties
+**/src/main/resources/application*.properties
+
+
+# Sensitive local configurations
+**/src/main/resources/application-local.yml
+**/src/main/resources/application-local.properties
